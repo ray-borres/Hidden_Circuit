@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Phantom Vault</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-grid"></div>
+
+    <main class="container">
+
+        <section class="vault-card">
+
+            <div class="lock-icon">
+                🔐
+            </div>
+
+            <h1>PHANTOM VAULT</h1>
+
+            <p class="subtitle">
+                SECURE ADMINISTRATIVE TERMINAL
+            </p>
+
+            <div class="line"></div>
+
+            <form id="loginForm">
+
+                <label for="username">
+                    USERNAME
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter username"
+                    autocomplete="off"
+                    required
+                >
+
+                <label for="password">
+                    PASSWORD
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit">
+                    AUTHENTICATE
+                </button>
+
+            </form>
+
+            <div id="message"></div>
+
+            <div class="status-box">
+
+                <span>SYSTEM STATUS</span>
+
+                <strong id="status">
+                    LOCKED
+                </strong>
+
+            </div>
+
+            <p class="footer-text">
+                PHANTOM SECURITY SYSTEM v2.6
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
